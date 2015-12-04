@@ -1,0 +1,9 @@
+grimlands notes:
+
+create in python
+
+create in javascript and php, host on mitg
+
+create for ios and android
+
+south room needs east locked door
