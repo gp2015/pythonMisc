@@ -32,17 +32,36 @@ def collatz(num):
 		return collatz(3*num + 1)
 
 
+# init fib array
+# no indices exist yet, so cannot fib[0] = num
+# have to .append to allocate memory
 fib = []
 fib.append(1)
 fib.append(1)
 fib.append(2)
 
+
 # get first num numbers in fib
-def fib_get(num):
-	if (num == 0) or (num == 1):
-		return 1
+def get_fib(num):
+	# base cases 0, 1
+	if num == 0:
+		exit
+		
+	if num == 1:
+		
 	else:
+		# start at 1 because fib[0] and fib[1] already allocated
+		for i in range(2, num):
+			next = fib[i - 1] + fib[i - 2]
+			fib.append(next)
+	return fib
 		
 
-
-print fib_get(10)
+print get_fib(0)
+print get_fib(1)
+print get_fib(2)
+print get_fib(3)
+print get_fib(5)
+print get_fib(6)
+print get_fib(10)
+print get_fib(20)

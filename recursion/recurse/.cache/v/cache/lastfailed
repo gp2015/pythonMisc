@@ -1,3 +1,3 @@
 {
-  "test_recurse.py": true
+  "test_recurse.py::test_fib": true
 }
